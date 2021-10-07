@@ -1,0 +1,44 @@
+{
+  "name": "quickey-react-native-sdk",
+  "title": "Quickey react native Sdk",
+  "version": "0.0.1",
+  "description": "react native sdk",
+  "main": "index.js",
+  "files": [
+    "README.md",
+    "android",
+    "index.js",
+    "ios",
+    "quickey-react-native-sdk.podspec",
+    "src"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-native"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/efrizal_analisa/quickey-react-native-sdk.git",
+    "baseUrl": "https://github.com/efrizal_analisa/quickey-react-native-sdk"
+  },
+  "author": {
+    "name": "quickey team",
+    "email": "efrizal@analisa.io"
+  },
+  "license": "MIT",
+  "licenseFilename": "LICENSE",
+  "readmeFilename": "README.md",
+  "devDependencies": {
+    "metro-react-native-babel-preset": "^0.66.2",
+    "react": "^16.9.0",
+    "react-native": "^0.61.5"
+  },
+  "dependencies": {
+    "axios": "^0.22.0",
+    "prop-types": "^15.7.2",
+    "react-native-fbsdk": "^3.0.0",
+    "react-native-social-buttons": "^1.2.0"
+  }
+}
