@@ -22,7 +22,11 @@ class Auth extends Base {
                 });
                 return response.data    
             } catch (error) {
-                return error.response.data
+                if (error.response) {
+                    return error.response.data
+                } else {
+                    return error                    
+                }
             }
         }
         
@@ -36,7 +40,11 @@ class Auth extends Base {
                     }
                 })
             } catch (error) {
-                return error
+                if (error.response) {
+                    return error.response.data
+                } else {
+                    return error                    
+                }
             }
         }
         
@@ -59,7 +67,11 @@ class Auth extends Base {
                   }
                 );
             } catch (error) {
-                return error
+                if (error.response) {
+                    return error.response.data
+                } else {
+                    return error                    
+                }
             }
         }
         
@@ -75,7 +87,11 @@ class Auth extends Base {
                 });
                 return response.data    
             } catch (error) {
-                return error.response.data
+                if (error.response) {
+                    return error.response.data
+                } else {
+                    return error                    
+                }
             }
         }
 }

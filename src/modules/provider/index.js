@@ -20,7 +20,11 @@ class Provider extends Base {
                     throw { status:400, message:'Invalid Type Input' }
                 }
             } catch (error) {
-                return error
+                if (error.response) {
+                    return error.response.data
+                } else {
+                    return error                    
+                }
             }
         }
         
@@ -37,7 +41,11 @@ class Provider extends Base {
                     });
                     return response.data    
                 } catch (error) {
-                    return error.response.data
+                    if (error.response) {
+                        return error.response.data
+                    } else {
+                        return error                    
+                    }
                 }        
             } else {
                 try {
@@ -47,11 +55,15 @@ class Provider extends Base {
                         headers: {
                             authorization: this.apiKey
                         },
-                            data: { provider,  mobilePlatform:this.mobilePlatform, type }
+                            data: { provider,  mobilePlatform:this.mobilePlatform }
                         });
                     return response.data    
                 } catch (error) {
-                    return error.response.data
+                    if (error.response) {
+                        return error.response.data
+                    } else {
+                        return error                    
+                    }
                 }            
             }
         }
@@ -68,7 +80,11 @@ class Provider extends Base {
                 });
                 return response.data    
             } catch (error) {
-                return error.response.data
+                if (error.response) {
+                    return error.response.data
+                } else {
+                    return error                    
+                }
             }
     }
 }

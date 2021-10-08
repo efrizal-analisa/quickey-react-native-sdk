@@ -19,7 +19,11 @@ class App extends Base {
                 };
                 return appData        
             } catch (error) {
-                return error
+                if (error.response) {
+                    return error.response.data
+                } else {
+                    return error                    
+                }
             }
     }
 }
