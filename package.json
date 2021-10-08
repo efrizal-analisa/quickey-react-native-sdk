@@ -1,7 +1,7 @@
 {
   "name": "react-native-quickey-sdk",
   "title": "Quickey react native Sdk",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "react native sdk",
   "main": "index.js",
   "files": [
