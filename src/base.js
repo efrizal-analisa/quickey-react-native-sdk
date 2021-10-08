@@ -1,6 +1,6 @@
 class Base {
     constructor () {
-        this.baseUrl = `http://staging.getquickey.com:3001`
+        this.baseUrl = `https://api.getquickey.com`
     }
 }
 
